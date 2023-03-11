@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffd700;
+  height: 100%;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1.4;
+  font-size: inherit;
+  scroll-behavior: smooth;
+}
+.according {
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+}
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.according_menu {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+.according_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.according_label {
+  display: block;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #0359d9;
+  transition: all 0.5s ease-in-out;
+}
+.according_label:hover {
+  transition: all 0.5s linear;
+  color: #090909;
+  cursor: pointer;
+}
+.according_label > img {
+  display: none;
+  width: 40%;
+  height: 40%;
+  margin-left: 12rem;
+  transition: all 0.5s ease-in-out;
+}
+.according_input:hover + .according_label > img {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.according_input:checked + .according_label > img {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.according_input:checked + .according_label span {
+  transform: rotate(135deg);
+  transition: all 0.3s linear;
+}
+.according_input:hover + .according_label span {
+  transform: rotate(135deg);
+  transition: all 0.3s linear;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffd700;
+}
+.accordion {
+  max-width: 800px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100%;
+}
+.accordion_item {
+  display: block;
+  margin: 50px;
+  border-top: 1px solid #ccc;
+}
+img {
+  display: none;
+  width: 35%;
+  height: 35%;
+  background-color: #696969;
+  border-radius: 10px;
+  margin-left: 15rem;
+}
+.title_name {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 30px;
+  padding-top: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion_input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.accordion_input:hover + .accordion_label > img {
+  display: block;
+}
+.accordion_label {
+  color: #0359d9;
+  cursor: pointer;
+  font-weight: 800;
+}
+.content_title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.content_plus {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 0;
+} */
