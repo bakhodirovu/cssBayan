@@ -15,14 +15,15 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .according {
-  max-width: 50%;
+  max-width: 55%;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
 }
 .title {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
+  padding: 1rem;
 }
 .according_menu {
   border-top: 1px solid #ccc;
@@ -45,7 +46,13 @@ body {
   color: #090909;
   cursor: pointer;
 }
-
+.according_content > p {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.according_content > span {
+  font-size: 1.5em;
+}
 .according_label > img {
   opacity: 0;
   width: 5%;
@@ -70,4 +77,43 @@ body {
 .according_input:hover + .according_label span {
   transform: rotate(135deg);
   transition: all 0.3s linear;
+}
+@media (max-width: 1020px) {
+  .title {
+    font-size: 20px;
+  }
+  .according {
+    max-width: 50%;
+  }
+  .according_menu {
+    padding: 10px;
+  }
+  .according_content > p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .according_content > span {
+    font-size: 18px;
+  }
+  .according_label > img {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .according {
+    max-width: 90%;
+  }
+  .according_content > p {
+    font-size: 14px;
+  }
+  .according_content > span {
+    font-size: 14px;
+  }
+  .according_label > img {
+    margin-left: 4rem;
+  }
 }
