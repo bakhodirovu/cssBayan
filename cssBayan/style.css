@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffd700;
+  height: 100%;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1.4;
+  font-size: inherit;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.according {
+  max-width: 55%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1em;
+}
+.title {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 1rem;
+}
+.according_menu {
+  border-top: 1px solid #ccc;
+  padding: 1em;
+}
+.according_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.according_label {
+  display: block;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #0359d9;
+  transition: all 0.5s ease-in-out;
+}
+.according_label:hover {
+  transition: all 0.5s linear;
+  color: #090909;
+  cursor: pointer;
+}
+.according_content > p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.according_content > span {
+  font-size: 1.3em;
+}
+.according_label > img {
+  opacity: 0;
+  width: 5%;
+  height: 5%;
+  margin-left: 12rem;
+  transition: all 0.5s ease-in-out;
+}
+.according_input:checked + .according_label > img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  width: 40%;
+}
+.according_input:hover + .according_label > img {
+  opacity: 1;
+  width: 40%;
+  transition: all 0.5s ease-in-out;
+}
+.according_input:checked + .according_label span {
+  transform: rotate(135deg);
+  transition: all 0.3s linear;
+}
+.according_input:hover + .according_label span {
+  transform: rotate(135deg);
+  transition: all 0.3s linear;
+}
+@media (max-width: 1020px) {
+  .title {
+    font-size: 1.6em;
+  }
+  .according {
+    max-width: 50%;
+  }
+  .according_menu {
+    padding: 0.7em;
+  }
+  .according_content > p {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+  .according_content > span {
+    font-size: 0.7em;
+  }
+  .according_label > img {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 650px) {
+  .title {
+    font-size: 1.6em;
+    padding: 0.2em;
+  }
+  .according {
+    max-width: 90%;
+  }
+  .according_content > p {
+    font-size: 0.6em;
+  }
+  .according_content > span {
+    font-size: 0.6em;
+  }
+  .according_label > img {
+    margin-left: 4rem;
+  }
+}
